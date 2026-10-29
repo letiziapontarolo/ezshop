@@ -16,7 +16,7 @@ else:
 
 # JWT Configuration
 TOKEN_LIFESPAN_HOURS = 24
-SECRET_KEY = "REMOVED_JWT_SECRET"
+SECRET_KEY = os.environ["EZSHOP_SECRET_KEY"]
 ALGORITHM = "HS256"
 
 # Application URLs
